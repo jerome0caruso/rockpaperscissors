@@ -26,6 +26,7 @@ button{
     margin-bottom: 0;
     border-radius: 29px;
     border: 1pc solid pink;
+    cursor: pointer;
 }
 img{
     width: 11.5rem;
