@@ -69,21 +69,21 @@ function result(user, computer){
         imgageArea.removeChild(sisImg)
         imgageArea.removeChild(paperImg)
         let h3 = document.createElement("h2")
-        h3.innerHTML = `User pick: Rock  --- Tie! ---  Computer pick: Rock`
+        h3.innerHTML = `<h5>User pick: Rock</h5>  --- Tie! ---  <h5>Computer pick: Rock</h5>`
         imgageArea.appendChild(h3)
         winner = rockImg;
         return winner;
     } else if(computer === rockImg && user === sisImg){
          imgageArea.removeChild(paperImg)
         let h3 = document.createElement("h2")
-        h3.innerHTML = `User pick: Scissors  --- Computer Wins! ---  Computer pick: Rock`
+        h3.innerHTML = `<h5>User pick: Scissors</h5>  --- Computer Wins! ---  <h5>Computer pick: Rock</h5>`
         imgageArea.appendChild(h3)
         winner = rockImg;
         return winner;
     } else if(computer === rockImg && user === paperImg){
         imgageArea.removeChild(sisImg)
         let h3 = document.createElement("h2")
-        h3.innerHTML = `User pick: Paper  --- You Win! ---  Computer pick: Rock`
+        h3.innerHTML = `<h5>User pick: Paper</h5>  --- You Win! ---  <h5>Computer pick: Rock</h5>`
         imgageArea.appendChild(h3)
         winner = paperImg;
         return winner;
@@ -92,21 +92,21 @@ function result(user, computer){
         imgageArea.removeChild(rockImg)
         imgageArea.removeChild(paperImg)
         let h3 = document.createElement("h2")
-        h3.innerHTML = `User pick: Scissors  --- You Tie! ---  Computer pick: Scissors`
+        h3.innerHTML = `<h5>User pick: Scissors</h5>  --- You Tie! ---  <h5>Computer pick: Scissors</h5>`
         imgageArea.appendChild(h3)
         winner = sisImg;
         return winner;
     } else if(computer === sisImg && user === rockImg){
         imgageArea.removeChild(paperImg)
         let h3 = document.createElement("h2")
-        h3.innerHTML = `User pick: Rock  --- You Win! ---  Computer pick: Scissors`
+        h3.innerHTML = `<h5>User pick: Rock</h5>  --- You Win! ---  <h5>Computer pick: Scissors</h5>`
         imgageArea.appendChild(h3)  
         winner = rockImg; 
         return winner;
     } else if(computer === sisImg && user === paperImg){
         imgageArea.removeChild(rockImg)
         let h3 = document.createElement("h2")
-        h3.innerHTML = `User pick: Paper  --- Computer Wins! ---  Computer pick: Scissors`
+        h3.innerHTML = `<h5>User pick: Paper</h5>  --- Computer Wins! ---  <h5>Computer pick: Scissors</h5>`
         imgageArea.appendChild(h3)
         winner = sisImg;
         return winner;
@@ -115,21 +115,21 @@ function result(user, computer){
         imgageArea.removeChild(rockImg)
         imgageArea.removeChild(sisImg)
         let h3 = document.createElement("h2")
-        h3.innerHTML = `User pick: Paper  --- You Tie! ---  Computer pick: Paper`
+        h3.innerHTML = `<h5>User pick: Paper</h5>  --- You Tie! ---  <h5>Computer pick: Paper</h5>`
         imgageArea.appendChild(h3)
         winner = paperImg;
         return winner;
     } else if(computer === paperImg && user === rockImg){
         imgageArea.removeChild(sisImg)
         let h3 = document.createElement("h2")
-        h3.innerHTML = `User pick: Rock  --- Computer Wins! ---  Computer pick: Paper`
+        h3.innerHTML = `<h5>User pick: Rock</h5>  --- Computer Wins! ---  <h5>Computer pick: Paper</h5>`
         imgageArea.appendChild(h3)  
         winner = paperImg;
         return winner; 
     } else if(computer === paperImg && user === sisImg){
         imgageArea.removeChild(rockImg)
         let h3 = document.createElement("h2")
-        h3.innerHTML = `User pick: Scissors  --- You Win! ---  Computer pick: Paper`
+        h3.innerHTML = `<h5>User pick: Scissors</h5>  --- You Win! ---  <h5>Computer pick: Paper</h5>`
         imgageArea.appendChild(h3)
         winner = sisImg;
         return winner;
